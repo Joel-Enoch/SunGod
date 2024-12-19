@@ -11,6 +11,34 @@
             color: #333;
             margin: 0;
             padding: 2rem;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #00477b;}
+
         }
         .comment-section {
             max-width: 600px;
@@ -86,6 +114,29 @@
 </head>
 <body>
        <header>
+
+             <p>Hover the mouse over the button to open the dropdown menu.</p>
+
+       <div class="dropdown">
+           <button class="dropbtn">Official Website</button>
+           <div class="dropdown-content">
+              <a href="https://science.nasa.gov/sun/facts/" target="_blank">The Sun</a>
+              <a href="https://science.nasa.gov/mercury/facts/" target="_blank">Mercury</a>
+              <a href="https://science.nasa.gov/venus/venus-facts/" target="_blank">Venus</a>
+              <a href="https://science.nasa.gov/earth/facts/" target="_blank">Earth</a>
+              <a href="https://science.nasa.gov/mars/facts/" target="_blank">Mars</a>
+              <a href="https://en.wikipedia.org/wiki/Asteroid_belt">Asteroid Belt</a>
+              <a href="https://science.nasa.gov/jupiter/jupiter-facts/" target="_blank">Jupiter</a>
+              <a href="https://science.nasa.gov/saturn/facts/" target="_blank">Saturn</a>
+              <a href="https://science.nasa.gov/uranus/facts/" target="_blank">Uranus</a>
+              <a href="https://science.nasa.gov/neptune/neptune-facts/" target="_blank">Neptune</a>
+              <a href="https://science.nasa.gov/solar-system/kuiper-belt/" target="_blank">Kuiper Belt</a>
+              <a href="https://science.nasa.gov/dwarf-planets/" target="_blank">Dwarf Planet</a>
+              <a href="https://science.nasa.gov/solar-system/oort-cloud/" target="_blank">Oort Cloud</a>
+
+       </div>
+    </div>
+
         <nav>
             <ul class="menu">
                 <li><a href="Minigame.html" target="content">Minigame</a>
